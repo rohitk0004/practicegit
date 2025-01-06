@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>medical invoice</title>
+    <link rel="stylesheet" href="medicalpage.css">
+    
+</head>
+<body>
+<div class="container">
+    <div class="header">KADAM MEDICAL</div>
+    <div class="form-group">
+        <label for="invoice-no">Invoice No</label>
+        <input type="text" id="invoice-no" placeholder="Enter Invoice No">
+
+        <label for="date">Date</label>
+        <input type="date" id="date">
+
+        <label for="patient-name">Patient Name</label>
+        <input type="text" id="patient-name" placeholder="Enter Patient Name">
+
+        <label for="doctor-name">Doctor Name</label>
+        <input type="text" id="doctor-name" placeholder="Enter Doctor Name">
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Medicine Name</th>
+                <th>Exp. Date</th>
+                <th>MRP</th>
+               </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" placeholder="Enter"></td>
+                        <td><input type="date"></td>
+                        <td><input type="number" step="0.01"></td>
+                    </tr>
+                </tbody>
+                <thead>
+                <tr>
+                <th>Batch No</th>
+                <th>Disc</th>
+                <th>Strip</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" placeholder="Batch"></td>
+                        <td><input type="number" step="0.01"></td>
+                        <td><input type="text" placeholder="Strip"></td>
+                    </tr>
+                </tbody>
+
+                <thead>
+                <tr>
+                <th>Qty</th>
+                <th>GST</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="number" step="1"></td>
+                <td><input type="number" step="0.01"></td>
+                <td><input type="number" step="0.01"></td>
+            </tr>
+        </tbody>
+       
+    </table>
+   <div>
+    <div class="button_type">
+        <button type="submit">Send</button>
+    
+      <button type="submit">Send/Print</button>
+      <button type="submit" id="editbutton">Edit</button>
+      <button type="submit">Net Amt</button>
+    </div>
+ 
+
+
+</div>
+</body>
+</html>
